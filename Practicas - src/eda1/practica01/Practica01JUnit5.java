@@ -14,8 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class Practica01JUnit5 {
 	private String directorioEntrada = System.getProperty("user.dir") + File.separator +
-							           "Practicas" + File.separator +
-							           "src" + File.separator +
+							           "Practicas - src" + File.separator +
 							           "eda1" + File.separator +
 							           "practica01" + File.separator;
 							           

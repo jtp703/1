@@ -10,7 +10,7 @@ public class User{
 	private static int numUsers = 0;
 	private String userId = "";
 	private ArrayList<Device> devices = new ArrayList<>();
-	private static int id = 1;
+
 	
 	public static void initializeNumUsers() {
 		numUsers = 0;
@@ -32,8 +32,8 @@ public class User{
 		}
 
 		if(!name.equals("") && !name.equals(null)) {
-			this.userId = id +".- "+ name.trim();
-			++id;
+			this.userId = ++numUsers +".- "+ name.trim();
+
 
 		}
 

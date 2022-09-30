@@ -7,7 +7,6 @@ public class Device implements Iterable<String>{
 	private static int numDevices=0; //contador de dispositivos...atributo estatico
 	private String deviceId = "";
 	private LinkedList<String> words = new LinkedList<>();
-	private static int id = 1;
 		
 	public static void initializeNumDevices() {
 		numDevices = 0;
@@ -34,13 +33,11 @@ public class Device implements Iterable<String>{
 		//if(name == null) throw new RuntimeException("El atributo name no puede ser nulo");
 
 		if(name.equals("")) {
-			this.deviceId = id +".- "+"noName";
+			this.deviceId = ++numDevices +".- "+"noName";
 		}else{
-			this.deviceId = id + ".- " + name.trim();
+			this.deviceId = ++numDevices + ".- " + name.trim();
 		}
 		//words.add(deviceId);
-		++numDevices;
-		++id;
 	}
 	
 	public void clear() {
