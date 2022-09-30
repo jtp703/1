@@ -1,4 +1,4 @@
-package src.eda1.practica01;
+package eda1.practica01;
 
 import org.testng.annotations.Test;
 import org.junit.jupiter.api.MethodOrderer;
